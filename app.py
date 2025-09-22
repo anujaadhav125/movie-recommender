@@ -11,7 +11,7 @@ import re
 # --------------------------
 # Load dataset
 # --------------------------
-movies = pd.read_csv("./dataset/All_Movies1.csv", engine="python", on_bad_lines="skip")
+movies = pd.read_csv("dataset/All_Movies1.csv", engine="python", on_bad_lines="skip")
 
 # Ensure proper columns
 movies = movies[['title', 'overview', 'genres', 'release_date', 'runtime', 'vote_average', 'poster_path', 'Director', 'Cast']]
