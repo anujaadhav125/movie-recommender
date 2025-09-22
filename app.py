@@ -4,11 +4,9 @@
 
 import streamlit as st
 import pandas as pd
-try:
-    from sklearn.feature_extraction.text import CountVectorizer
-except ModuleNotFoundError:
-    st.error("scikit-learn is not installed correctly! Please install it using `pip install scikit-learn`")
-    st.stop() 
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 from sklearn.metrics.pairwise import cosine_similarity
 import re
 
